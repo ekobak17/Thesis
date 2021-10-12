@@ -15,6 +15,11 @@
 		6051901126FE464E0072AF57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6051900F26FE464E0072AF57 /* LaunchScreen.storyboard */; };
 		6051901C26FE464E0072AF57 /* MovementTrackerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6051901B26FE464E0072AF57 /* MovementTrackerAppTests.swift */; };
 		6051902726FE464E0072AF57 /* MovementTrackerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6051902626FE464E0072AF57 /* MovementTrackerAppUITests.swift */; };
+		609A08B12714ED2300AFE0B0 /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609A08B02714ED2300AFE0B0 /* RunViewController.swift */; };
+		609A08BE2714ED5200AFE0B0 /* JumpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609A08BD2714ED5200AFE0B0 /* JumpViewController.swift */; };
+		609A08C32714ED6B00AFE0B0 /* UpStairsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609A08C22714ED6B00AFE0B0 /* UpStairsViewController.swift */; };
+		609A08C82714ED8300AFE0B0 /* DownStairsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609A08C72714ED8300AFE0B0 /* DownStairsViewController.swift */; };
+		609A08CD2716266900AFE0B0 /* WalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609A08CC2716266900AFE0B0 /* WalkViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		6051902226FE464E0072AF57 /* MovementTrackerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovementTrackerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6051902626FE464E0072AF57 /* MovementTrackerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementTrackerAppUITests.swift; sourceTree = "<group>"; };
 		6051902826FE464E0072AF57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		609A08B02714ED2300AFE0B0 /* RunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
+		609A08BD2714ED5200AFE0B0 /* JumpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpViewController.swift; sourceTree = "<group>"; };
+		609A08C22714ED6B00AFE0B0 /* UpStairsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpStairsViewController.swift; sourceTree = "<group>"; };
+		609A08C72714ED8300AFE0B0 /* DownStairsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownStairsViewController.swift; sourceTree = "<group>"; };
+		609A08CC2716266900AFE0B0 /* WalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +111,7 @@
 			children = (
 				6051900426FE46490072AF57 /* AppDelegate.swift */,
 				6051900626FE46490072AF57 /* SceneDelegate.swift */,
-				6051900826FE46490072AF57 /* ViewController.swift */,
+				609A08AC2714E8C600AFE0B0 /* ViewController  */,
 				6051900A26FE46490072AF57 /* Main.storyboard */,
 				6051900D26FE464E0072AF57 /* Assets.xcassets */,
 				6051900F26FE464E0072AF57 /* LaunchScreen.storyboard */,
@@ -126,6 +136,19 @@
 				6051902826FE464E0072AF57 /* Info.plist */,
 			);
 			path = MovementTrackerAppUITests;
+			sourceTree = "<group>";
+		};
+		609A08AC2714E8C600AFE0B0 /* ViewController  */ = {
+			isa = PBXGroup;
+			children = (
+				6051900826FE46490072AF57 /* ViewController.swift */,
+				609A08CC2716266900AFE0B0 /* WalkViewController.swift */,
+				609A08B02714ED2300AFE0B0 /* RunViewController.swift */,
+				609A08BD2714ED5200AFE0B0 /* JumpViewController.swift */,
+				609A08C72714ED8300AFE0B0 /* DownStairsViewController.swift */,
+				609A08C22714ED6B00AFE0B0 /* UpStairsViewController.swift */,
+			);
+			path = "ViewController ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +281,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				609A08BE2714ED5200AFE0B0 /* JumpViewController.swift in Sources */,
+				609A08CD2716266900AFE0B0 /* WalkViewController.swift in Sources */,
 				6051900926FE46490072AF57 /* ViewController.swift in Sources */,
 				6051900526FE46490072AF57 /* AppDelegate.swift in Sources */,
+				609A08C32714ED6B00AFE0B0 /* UpStairsViewController.swift in Sources */,
+				609A08B12714ED2300AFE0B0 /* RunViewController.swift in Sources */,
+				609A08C82714ED8300AFE0B0 /* DownStairsViewController.swift in Sources */,
 				6051900726FE46490072AF57 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
