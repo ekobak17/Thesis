@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MQTTKit",
+        "repositoryURL": "https://github.com/arnecs/MQTTKit.git",
+        "state": {
+          "branch": "master",
+          "revision": "ec894640f1ea27f758b3f4d22722d83159773cd0",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

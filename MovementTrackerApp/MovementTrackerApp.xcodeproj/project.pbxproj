@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,7 @@
 		609A08C32714ED6B00AFE0B0 /* UpStairsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609A08C22714ED6B00AFE0B0 /* UpStairsViewController.swift */; };
 		609A08C82714ED8300AFE0B0 /* DownStairsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609A08C72714ED8300AFE0B0 /* DownStairsViewController.swift */; };
 		609A08CD2716266900AFE0B0 /* WalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609A08CC2716266900AFE0B0 /* WalkViewController.swift */; };
+		609A08D327190DA500AFE0B0 /* MQTTKit in Frameworks */ = {isa = PBXBuildFile; productRef = 609A08D227190DA500AFE0B0 /* MQTTKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				609A08D327190DA500AFE0B0 /* MQTTKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +169,9 @@
 			dependencies = (
 			);
 			name = MovementTrackerApp;
+			packageProductDependencies = (
+				609A08D227190DA500AFE0B0 /* MQTTKit */,
+			);
 			productName = MovementTrackerApp;
 			productReference = 6051900126FE46490072AF57 /* MovementTrackerApp.app */;
 			productType = "com.apple.product-type.application";
@@ -238,6 +243,9 @@
 				Base,
 			);
 			mainGroup = 60518FF826FE46490072AF57;
+			packageReferences = (
+				609A08D127190DA500AFE0B0 /* XCRemoteSwiftPackageReference "MQTTKit" */,
+			);
 			productRefGroup = 6051900226FE46490072AF57 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -473,7 +481,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = HPCL.MovementTrackerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -491,7 +499,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = HPCL.MovementTrackerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -615,6 +623,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		609A08D127190DA500AFE0B0 /* XCRemoteSwiftPackageReference "MQTTKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/arnecs/MQTTKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		609A08D227190DA500AFE0B0 /* MQTTKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 609A08D127190DA500AFE0B0 /* XCRemoteSwiftPackageReference "MQTTKit" */;
+			productName = MQTTKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 60518FF926FE46490072AF57 /* Project object */;
 }
